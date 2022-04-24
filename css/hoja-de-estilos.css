@@ -22,7 +22,6 @@ p{ font-size: 20px; font-weight: 400; }
 a{ text-decoration: none;}
 
 
-
 .fondo-inicio{
     background: linear-gradient(129deg, #a699cf, #fbe1e1, #8395f7);
     background-size: 600% 600%;
@@ -116,8 +115,6 @@ header{
    100% {
        opacity: 1;
     }
-}
-    
 }
 
 .hero__titulo{
