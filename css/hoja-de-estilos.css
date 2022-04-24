@@ -8,7 +8,7 @@
 
 /* Guía de estilo general y textos */
 
-body{ background: -webkit-linear-gradient(top, rgb(253, 235, 235), rgb(168, 150, 211) ); }
+/* body{ background: -webkit-linear-gradient(top, rgb(253, 235, 235), rgb(168, 150, 211) ); } */
 body{ font-family: 'Rajdhani', sans-serif; }
 
 h1{ font-size: 80px; font-weight: 400; }
@@ -21,7 +21,28 @@ p{ font-size: 20px; font-weight: 400; }
 
 a{ text-decoration: none;}
 
-/* Estilo del links menú de navegación */
+
+
+.fondo-inicio{
+    background: linear-gradient(129deg, #a699cf, #fbe1e1, #8395f7);
+    background-size: 600% 600%;
+
+    -webkit-animation: fondo-inicio 13s ease infinite;
+    animation: fondo-inicio 13s ease infinite;
+}
+
+@-webkit-keyframes fondo-inicio {
+    0%{background-position:0% 46%}
+    50%{background-position:100% 55%}
+    100%{background-position:0% 46%}
+}
+
+@keyframes fondo-inicio {
+    0%{background-position:0% 46%}
+    50%{background-position:100% 55%}
+    100%{background-position:0% 46%}
+}
+
 
 header{
     display: flex;
@@ -80,10 +101,23 @@ header{
     height: 830px;
     margin: 50px 100px 50px 100px;
     border-radius:60px;
-    text-align: center;
+    text-align: left;
     background-image: url(../images/pexels-александр-максин-9048927.jpg);
     background-size: cover;
-
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+   0% {
+       opacity: 0;
+}
+   100% {
+       opacity: 1;
+    }
+}
+    
 }
 
 .hero__titulo{
@@ -131,7 +165,6 @@ header{
 .scroll{
     filter: invert(100%);
 }
-
 
 
 /* Estilo del Footer */
