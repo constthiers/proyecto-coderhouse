@@ -226,13 +226,6 @@ footer a:hover{
     color: white;
 }
 
-/* Estilo de PRUEBA para acerca-de.html */
-
-.acerca-de{
-    margin: 20px 100px 20px 100px;
-    padding: 40px 150px 40px 150px;
-    width: auto;
-}
 
 
 /* Estilo de PRUEBA para contacto.html */
@@ -660,8 +653,10 @@ form{
 }
 
 
-
-
+/* CSS de Bootstrap */
+.container-lg h4{
+    mt: 5;
+}
 
 
 
