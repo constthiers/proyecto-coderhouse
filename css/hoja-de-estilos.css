@@ -47,7 +47,7 @@ header{
     display: flex;
     flex-direction: row;
     width: auto;
-    height: 120px;
+    height: 125px;
     margin: 10px 100px 10px 100px;
     padding: 10px;
     background-color:  rgba(255, 255, 255, 0.5);
@@ -88,6 +88,10 @@ header{
 .menu-logo{
     justify-self: center;
 
+}
+
+.menu-links{
+    padding-top: 1rem;
 }
 
 
@@ -226,6 +230,13 @@ footer a:hover{
     color: white;
 }
 
+/* Estilo de PRUEBA para acerca-de.html */
+
+.acerca-de{
+    margin: 20px 100px 20px 100px;
+    padding: 40px 150px 40px 150px;
+    width: auto;
+}
 
 
 /* Estilo de PRUEBA para contacto.html */
@@ -388,7 +399,7 @@ form{
         width: 100%;
         bottom: 0%;
     }
-    
+
 }
 
 @media screen and (max-width: 1023px) {
@@ -468,7 +479,6 @@ form{
     .portafolio__ficha h3{
         font-size: 28px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -476,18 +486,11 @@ form{
     header{
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
     }
 
-    .menu-left{
+    .menu-links{
         display: none;
-    }
-
-    .menu-right{
-        display: none;
-    }
-
-    .footer-rights{
-        justify-content: center;
     }
 
     .hero{
@@ -651,8 +654,4 @@ form{
     }
 
 }
-
-
-
-
 
