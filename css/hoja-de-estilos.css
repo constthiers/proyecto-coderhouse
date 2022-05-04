@@ -50,7 +50,6 @@ header{
     height: 120px;
     margin: 10px 100px 10px 100px;
     padding: 10px;
-    background-color:  rgba(255, 255, 255, 0.5);
     border-radius: 60px;
 }
 
@@ -300,7 +299,7 @@ form{
 /* Estilo portafolio.html */
 
 .portafolio{
-    margin: 20px 0px 20px 100px;
+    margin: 200px 0px 20px 100px;
 }
 
 .portafolio__nav, li{
@@ -335,7 +334,6 @@ form{
     max-width: 67%;
     height: 660px;
     overflow-x: scroll;
-    overflow-y: scroll;
     gap: 50px;
 }
 
@@ -345,6 +343,7 @@ form{
     flex-flow: row wrap;
     justify-content: end;
     padding-top: 50px;
+    padding-bottom: 100px;
     gap: 3%;
 }
 
@@ -353,8 +352,86 @@ form{
     margin-right: 100px;
 }
 
-/* Media Querys */
+/* Animaciones para el Index */
 
+.header-inicio{
+    animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+    height: 120px;
+    margin: 10px 100px 10px 100px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+}
+
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.hero__gif{
+    animation: rotate-vert-center 5s linear infinite both;
+}
+
+@keyframes rotate-vert-center {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.footer-inicio{
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+/*  Animaciones para portafolio */
+
+.menu-fijo {
+    background-color: rgba(127, 255, 212, 0.066);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+}
+
+
+
+.portafolio-content{
+	animation: fade-in 2s ease-in both;}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+
+
+
+/* Media Querys */
 
 
 @media screen and (max-width: 1200px) {
@@ -452,7 +529,7 @@ form{
     }
 
     .portafolio{
-        margin: 60px 0px 80px 50px;
+        margin: 160px 0px 80px 50px;
     }
 
     .portafolio__nav{
@@ -516,6 +593,10 @@ form{
 
     .hero-info p{
         font-size: 26px;
+    }
+
+    .portafolio{
+        margin-top: 170px;
     }
 
     .portafolio-content{
@@ -605,7 +686,7 @@ form{
         display: flex;
         flex-direction: column;
         width: auto;
-        margin: 20px;
+        margin: 160px 20px 20px 20px;
     }
 
     .portafolio__nav{
