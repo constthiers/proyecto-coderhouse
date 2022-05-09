@@ -42,3 +42,27 @@ header{
     
     }
 }
+
+// Hay que cambiar la clase para que sea genérica del header y no solo del inicio.
+
+.header-inicio{
+    animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+    height: 120px;
+    margin: 10px 100px 10px 100px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+}
+
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+//   Crear una condicion general "if" el header está yes, 
+// se aplica aquí. Y en global (resto de las páginas) no"
