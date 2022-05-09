@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 120px;
+    margin: 10px 100px 10px 100px;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.menu-contenedor{
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__left{
+        display: flex;
+        width: 50%;
+    }
+    
+    &__right{
+        display: flex;
+        width: 50%;
+        justify-content: end;
+    }
+
+    &__links a{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    
+        &:hover{
+            font-weight: 700;
+            text-shadow: 2px 2px rgb(101, 235, 190);
+        }
+    }
+    
+    
+    &__title{
+        justify-self: center;
+    
+    }
+}
