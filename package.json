@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "description": "Sitio web realizado para la cursada 36910 de Coderhouse. El proyecto es una maqueta de un sitio web para portafolio de artista o diseñador.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constthiers/proyecto-coderhouse.git"
+  },
+  "author": "Connie Thiers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constthiers/proyecto-coderhouse/issues"
+  },
+  "homepage": "https://github.com/constthiers/proyecto-coderhouse#readme"
+}
