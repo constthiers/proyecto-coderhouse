@@ -252,31 +252,33 @@ form{
         flex-flow: column;
         width: auto;
         height: auto;
+
+        &__info{
+            width: 100%;
+            padding-bottom: 0px;
+      
+        }
+    
+        &__cta{
+            width: 100%;
+            height: min-content;
+            align-items: flex-end;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    
+        &__gif{
+            width: auto;
+            height: 100px;
+    
+            img{
+                width: auto;
+                height: 40px;
+            }
+        }
     }
 
-    .hero-info{
-        width: 100%;
-        padding-bottom: 0px;
-  
-    }
 
-    .hero-cta{
-        width: 100%;
-        height: min-content;
-        align-items: flex-end;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    .hero__gif{
-        width: auto;
-        height: 100px;
-    }
-
-    .scroll{
-        width: auto;
-        height: 40px;
-    }
 
     .footer{
         height: auto;
@@ -303,16 +305,20 @@ form{
         margin: 50px;
         padding-bottom: 0px;
         
+        &__info {
+    
+            &--titulo{
+                font-size: 90px;
+                line-height: 5rem;
+            }
+        
+            &--parrafo{
+                font-size: 20px;
+            }
+        }
     }
 
-    .hero-info h1{
-        font-size: 90px;
-        line-height: 5rem;
-    }
 
-    .hero-info p{
-        font-size: 20px;
-    }
 
     footer{
         display: flex;
@@ -373,11 +379,11 @@ form{
         flex-flow: row nowrap;
     }
 
-    .menu-left{
+    .menu-contenedor__left{
         display: none;
     }
 
-    .menu-right{
+    .menu-contenedor_right{
         display: none;
     }
 
@@ -390,21 +396,24 @@ form{
         background-size: 300%;
         background-position-x: center;
         background-attachment: fixed;
+
+        &__info{
+            padding-left: 40px;
+            padding-right: 40px;
+    
+            &--titulo{
+                font-size: 75px;
+                line-height: 4rem;
+            }
+    
+            &--parrafo{
+                font-size: 26px;
+            }
+        }
     }
 
-    .hero-info{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 
-    .hero-info h1{
-        font-size: 75px;
-        line-height: 4rem;
-    }
 
-    .hero-info p{
-        font-size: 26px;
-    }
 
     .portafolio{
         margin-top: 170px;
@@ -456,25 +465,28 @@ form{
     .hero{
         display: flex;
         margin: 30px 20px 50px 20px;
-    }
 
-    .hero-info h1{
-        font-size: 60px;
-        line-height: 3rem;
-    }
+        &__info{
+    
+            &--titulo{
+            font-size: 60px;
+            line-height: 3rem;
+            }
+    
+            &--parrafo{
+                font-size: 24px;
+            }
+        }
 
-    .hero-info p{
-        font-size: 24px;
-    }
-
-    .hero-cta{
-        align-items: flex-start;
-        padding-left: 40px;
-        padding-top: 20px;
-    }
-
-    .hero-scroll{
-        padding-top: 40px;
+        &__cta{
+            align-items: flex-start;
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+    
+        &__scroll{
+            padding-top: 40px;
+        }
     }
 
     footer{
