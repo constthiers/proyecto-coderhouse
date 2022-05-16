@@ -1,0 +1,168 @@
+
+.menu-fijo {
+    @include header ("yes");
+    @extend .menu-contenedor;
+}
+
+
+.portafolio{
+    margin: 200px 0px 20px 100px;
+
+    &__nav{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-right: 100px;
+    
+        li{
+            display: inline;
+            padding-right: 10px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        gap: 3%;
+        width: 100%;
+        animation: fade-in 2s ease-in both;
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+        }
+
+        &--ficha{
+            width: 27%;
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-right: 20px;
+        
+            p{
+                margin-top: auto;
+            }
+        }
+
+        &--slider{
+            display: flex;
+            flex-direction: row;    
+            max-width: 67%;
+            height: 660px;
+            overflow-x: scroll;
+            gap: 50px;
+        }
+
+        &--arrows{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 100%;
+            padding-top: 30px;
+            margin-right: 100px;
+        }
+
+    }  
+}
+
+@media screen and (max-width: 768px) {
+
+    .portafolio{
+        margin-top: 170px;
+
+        &__content{
+            background-color: rgba(127, 255, 212, 0.387);
+            display: flex;
+            flex-flow: column wrap;
+
+            &--ficha{
+                background-color: beige;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                width: 90%;
+                margin-bottom: 50px;
+
+
+            }
+        
+            &--slider{
+                background-color: aqua;
+                display: flex;
+                flex-direction: row; 
+                height: 500px;
+                min-width: 100%;
+
+            }
+
+            &--arrows{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-right: 100px;
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .portafolio{
+        width: auto;
+        margin: 160px 0px 20px 20px;
+
+        &__nav{
+            font-size: 18px;
+            gap: 10px;
+        }
+
+        &__content{
+            display: flex;
+            flex-flow: column wrap;
+         
+            &--ficha{
+                display: flex;
+                width: 100%;
+                height: 280px;
+                padding-right: 20px;
+            }
+        
+            &--slider{
+                display: flex;
+                height: fit-content;
+                max-width: 100%;
+                gap: 30px;
+
+                img{
+                    height: 300px;
+                }
+            }
+
+            &--arrows{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-right: 20px;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+/*  Animaciones para portafolio */
