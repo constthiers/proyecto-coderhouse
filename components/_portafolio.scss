@@ -1,12 +1,9 @@
 
-.menu-fijo {
-    @include header ("yes");
-    @extend .menu-contenedor;
-}
-
 
 .portafolio{
     margin: 200px 0px 20px 100px;
+    @extend .estilo-enlaces;
+    font-size: 20px;
 
     &__nav{
         display: flex;
@@ -72,6 +69,23 @@
 
     }  
 }
+
+$footer-links:(
+    instagram: rgb(236, 205, 255),
+    youtube: rgb(190, 208, 255),
+    linkedin: rgb(204, 154, 255),
+);
+
+@each $name, $color in $footer-links{
+    .#{$name} {
+        background-color: $color;
+        margin: 0 5px;
+        padding: 10px;
+        color: #000;
+        border-radius: 10px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 
