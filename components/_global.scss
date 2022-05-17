@@ -140,14 +140,22 @@ footer a:hover{
     color: white;
 }
 
-/* Estilo de PRUEBA para acerca-de.html */
+/* Estilo acerca-de.html --> en _acerca-de.html*/
+@mixin bioContainer ($shadow){
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.334);
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 30px 20px;
+    margin: 20px 20px;
 
-.acerca-de{
-    margin: 20px 100px 20px 100px;
-    padding: 40px 150px 40px 150px;
-    width: auto;
+
+    @if ($shadow == "yes") {
+        box-shadow: 0 20px 30px rgba($color: #0000008f, $alpha: 0.2);
+        
+    }
 }
-
 
 /* Estilo de PRUEBA para contacto.html */
 
@@ -207,6 +215,7 @@ form{
 .news-input label{
     width: 100%;
 }
+
 
 
 

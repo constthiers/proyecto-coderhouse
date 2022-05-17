@@ -1,0 +1,49 @@
+.acerca-de{
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px 100px 20px 100px;
+    padding: 40px 150px 40px 150px;
+    width: auto; 
+
+    img{
+        margin-bottom: 50px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 100px 0px 100px 0px ;
+        box-shadow: 1px 1px rgb(0, 0, 0);
+    }
+}
+
+.biografia,
+.carrera,
+.exhibiciones{
+    @include bioContainer ("yes");
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .acerca-de{
+        padding: 40px 80px 40px 80px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .acerca-de{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .acerca-de{
+        margin: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .acerca-de{
+        margin: 0px;
+    }
+}
