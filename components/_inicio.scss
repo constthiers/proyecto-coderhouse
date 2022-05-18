@@ -147,7 +147,42 @@ footer{
 
 // Media queries para index:
 
-@media screen and (max-width: 1200px){ }
+@media screen and (max-width: 1200px){
+  .hero{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    height: max-content;
+    margin: 100px;
+    padding-bottom: 30px;
+    
+    &__info {
+      width: 60%;
+      padding: 70px 7px 0px 70px;
+
+        &--titulo{
+            font-size: 80px;
+            line-height: 5rem;
+        }
+    
+        &--parrafo{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cta{
+      width: 40%;
+    }
+
+    &__scroll{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1023px){
 
@@ -191,6 +226,7 @@ footer{
     background-size: 300%;
     background-position-x: center;
     background-attachment: fixed;
+    margin: 50px;
 
     &__info{
         padding-left: 40px;
