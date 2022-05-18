@@ -75,6 +75,9 @@ a{ text-decoration: none;}
     }
 }
 
+.menu-contenedor__mobile{
+    display: none;
+}
 
 
 /* Estilo del Footer */
@@ -120,25 +123,79 @@ footer a:hover{
 
 /* Estilo de PRUEBA para menú.html */
 
+.enlaces-fullscreen{
+    list-style: none;
+
+    a{
+        color: white;
+    }
+    a:hover{
+        text-shadow: 2px 1px 0px rgb(0, 0, 0);
+    }
+}
+
 .fullscreen-menu{
+    display: flex;
+    flex-flow: column wrap;
     background-color: rgba(29, 29, 29, 0.485);
     min-height: 100vh;
+    justify-content: flex-start;
+    padding: 0px 150px;
+
+    &__first{
+
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @extend .enlaces-fullscreen;
+
+        img{
+            filter: invert(100%);
+        }
+
+        a{
+            font-size: 20px;
+            letter-spacing: 1px;
+
+
+            i{
+                color: white;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__nav{
+        text-align: center;
+        margin-top: 50px;
+        list-style: none;
+        @extend .enlaces-fullscreen;
+        span{
+            color: white;
+            font-size: 20px;
+            padding-right: 20px;
+        }
+
+        a{
+            font-size: 50px;
+            line-height: 80px;
+            text-align: left;
+        }
+    }
+
+    &__socials{
+        margin-top: 50px;
+        text-align: center;
+        list-style: none;
+        line-height: 30px;
+        @extend .enlaces-fullscreen;
+    }
 }
 
-.fullscreen__nav a{
-    font-size: 100px;
-    color: white;
-}
-
-.fullscreen__nav :hover{
-    color: white;
-    text-shadow: 5px 0px black;
-}
-
-.fullscreen__socials a{
-    font-size: 25px;
-    color: white;
-}
 
 /* Estilo acerca-de.html --> en _acerca-de.html*/
 @mixin bioContainer ($shadow){
@@ -344,15 +401,33 @@ form{
 
     .menu-contenedor{
         display: flex;
+        align-items: center;
         width: auto;
-        margin: 10px 50px;
+        margin: 30px 50px;
 
-        .menu-contenedor__left{
+        &__title{
+            display: flex;
+            width: 50%;
+        }
+
+        &__left{
             display: none;
         }
     
-        .menu-contenedor__right{
+        &__right{
             display: none;
+        }
+
+        &__mobile{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 50%;
+
+            i{
+                font-size: 15px;
+                padding-left: 5px;
+            }
         }
         
     }
@@ -374,18 +449,40 @@ form{
     .contacto__formulario{
         width: auto;
     }
+
+    .fullscreen-menu{
+        padding: 0px 80px;
+    }
         
 }
 
 @media screen and (max-width: 480px) {
 
-    header{
-        margin: 20px 20px 10px 20px;
-    }
-
     .menu-contenedor{
+        display: flex;
         width: auto;
-        margin: 20px;
+        margin: 30px 20px;
+
+        &__title{
+            display: flex;
+            width: 50%;
+        }
+
+        &__left{
+            display: none;
+        }
+    
+        &__right{
+            display: none;
+        }
+
+        &__mobile{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 50%;
+        }
+        
     }
 
 
@@ -435,5 +532,9 @@ form{
 
     .contacto h1{
         font-size: 60px;
+    }
+
+    .fullscreen-menu{
+        padding: 0px 20px;
     }
 }
