@@ -93,12 +93,10 @@ $footer-links:(
         margin-top: 170px;
 
         &__content{
-            background-color: rgba(127, 255, 212, 0.387);
             display: flex;
             flex-flow: column wrap;
 
             &--ficha{
-                background-color: beige;
                 display: flex;
                 flex-direction: column;
                 height: fit-content;
@@ -109,7 +107,6 @@ $footer-links:(
             }
         
             &--slider{
-                background-color: aqua;
                 display: flex;
                 flex-direction: row; 
                 height: 500px;

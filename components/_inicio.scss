@@ -143,3 +143,98 @@ footer{
     opacity: 1;
   }
 }
+
+
+// Media queries para index:
+
+@media screen and (max-width: 1200px){ }
+
+@media screen and (max-width: 1023px){
+
+  .hero{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: auto;
+    height: max-content;
+    margin: 100px;
+    padding-bottom: 30px;
+    
+    &__info {
+      width: 100%;
+      padding: 70px 70px 0px 70px;
+
+        &--titulo{
+            font-size: 90px;
+            line-height: 5rem;
+        }
+    
+        &--parrafo{
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__cta{
+      width: 100%;
+      align-items: flex-end;
+      padding: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .hero{
+    height: fit-content;
+    width: auto;
+    background-size: 300%;
+    background-position-x: center;
+    background-attachment: fixed;
+
+    &__info{
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &--titulo{
+            font-size: 75px;
+            line-height: 4rem;
+        }
+
+        &--parrafo{
+            font-size: 26px;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .hero{
+    display: flex;
+    margin: 30px 20px 50px 20px;
+
+    &__info{
+
+        &--titulo{
+        font-size: 60px;
+        line-height: 3rem;
+        }
+
+        &--parrafo{
+            font-size: 24px;
+        }
+    }
+
+    &__cta{
+        align-items: flex-start;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+
+    &__scroll{
+        padding-top: 40px;
+    }
+  }
+  
+}

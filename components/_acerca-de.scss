@@ -1,5 +1,4 @@
 .acerca-de{
-    background-color: antiquewhite;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -21,8 +20,6 @@
 .exhibiciones{
     @include bioContainer ("yes");
 }
-
-
 
 
 
