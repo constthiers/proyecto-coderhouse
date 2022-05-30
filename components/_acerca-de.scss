@@ -1,25 +1,43 @@
+.acerca-de-fondo{
+    background-image: url(../images/Fondo\ Acerca-de.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .acerca-de{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     margin: 20px 100px 20px 100px;
     padding: 40px 150px 40px 150px;
     width: auto; 
 
     img{
+        height: 500px;
+        margin-left: 100px;
+        margin-right: 100px;
         margin-bottom: 50px;
         padding-right: 10px;
         padding-bottom: 10px;
         border-radius: 100px 0px 100px 0px ;
-        box-shadow: 1px 1px rgb(0, 0, 0);
+        box-shadow: 1px 1px #fff;
     }
 }
+
 
 .biografia,
 .carrera,
 .exhibiciones{
     @include bioContainer ("yes");
+    width: 800px;
+
+    h6{
+        padding-bottom: 20px;
+    }
 }
+
 
 
 
@@ -29,16 +47,26 @@
         padding: 40px 80px 40px 80px;
     }
 }
+
 @media screen and (max-width: 1023px) {
     .acerca-de{
         padding: 20px;
     }
+
+    .biografia,
+    .carrera,
+    .exhibiciones{
+        @include bioContainer ("yes");
+        width: 100%;
+    }   
 }
+
 @media screen and (max-width: 768px) {
     .acerca-de{
         margin: 40px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .acerca-de{
         margin: 0px;

@@ -1,21 +1,9 @@
 
 
 .portafolio{
-    margin: 200px 0px 20px 100px;
+    margin: 50px 0px 20px 100px;
     @extend .estilo-enlaces;
     font-size: 20px;
-
-    &__nav{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin-right: 100px;
-    
-        li{
-            display: inline;
-            padding-right: 10px;
-        }
-    }
 
     &__content{
         display: flex;
@@ -62,6 +50,7 @@
             display: flex;
             flex-direction: row;
             justify-content: end;
+            align-items: center;
             width: 100%;
             padding-top: 30px;
             margin-right: 100px;
