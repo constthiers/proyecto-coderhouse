@@ -19,7 +19,7 @@ header{
   }
 
   .inicio{
-    background: linear-gradient(129deg, #a699cf, #fbe1e1, #8395f7);
+    background: linear-gradient(129deg, #646071, #eeefff, #2f2f2f);
     background-size: 600% 600%;
 
     -webkit-animation: inicio 13s ease infinite;
@@ -47,7 +47,7 @@ header{
   margin: 50px 100px 50px 100px;
   border-radius:60px;
   text-align: left;
-  background-image: url(../images/pexels-александр-максин-9048927.jpg);
+  background-image: url(../images/objeto-home.jpeg);
   background-size: cover;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -65,35 +65,37 @@ header{
   &__info{
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
+      align-items: flex-start;
+      justify-content: flex-end;
+      width: 60%;
       padding: 100px;
       color: white;
       text-shadow: 2px 2px 20px black;
   
       &--titulo{
-          font-size: 120px;
-          line-height: 6rem;
+          font-size: 80px;
+          line-height: 5rem;
           text-transform: uppercase;
           text-align: start;
-          padding-bottom: 20px;
-      
+          text-shadow: 3px 3px 8px black;
+    
       }
       
       &--parrafo{
           font-size: 25px;
           text-align: left;
+          text-shadow: 3px 3px 8px black;
       }
   }
   
   &__cta{
       display: flex;
       flex-direction: column;
-      width: 50%;
-      align-items: left;
+      width: 40%;
+      align-self: flex-end;
       justify-content: end;
-      padding: 100px;
+      padding-bottom: 50px;
+
 
       img{
         animation: rotate-vert-center 5s linear infinite both;
@@ -108,21 +110,6 @@ header{
         }
       }
   }
-  
-  &__scroll{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: center;
-      align-items: flex-end;
-      padding: 10px;
-
-      img{
-          filter: invert(100%);
-      }
-  }
-
-
   
   
 }
@@ -153,8 +140,8 @@ footer{
     display: flex;
     flex-flow: row wrap;
     width: auto;
-    height: max-content;
-    margin: 100px;
+    height: 600px;
+    margin: 40px 100px 40px 100px;
     padding-bottom: 30px;
     
     &__info {
@@ -189,19 +176,19 @@ footer{
 
   .hero{
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-start;
     width: auto;
-    height: max-content;
+    height: 500px;
     margin: 100px;
     padding-bottom: 30px;
     
     &__info {
-      width: 100%;
+      width: 70%;
       padding: 70px 70px 0px 70px;
 
         &--titulo{
-            font-size: 90px;
+            font-size: 80px;
             line-height: 5rem;
         }
     
@@ -212,7 +199,7 @@ footer{
     }
 
     &__cta{
-      width: 100%;
+      width: 30%;
       align-items: flex-end;
       padding: 0px;
     }
@@ -222,11 +209,11 @@ footer{
 @media screen and (max-width: 768px){
 
   .hero{
-    height: fit-content;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    height: 700px;
     width: auto;
-    background-size: 300%;
-    background-position-x: center;
-    background-attachment: fixed;
+    background-size: cover;
     margin: 50px;
 
     &__info{
@@ -234,7 +221,7 @@ footer{
         padding-right: 40px;
 
         &--titulo{
-            font-size: 75px;
+            font-size: 70px;
             line-height: 4rem;
         }
 
@@ -248,29 +235,26 @@ footer{
 @media screen and (max-width: 480px){
 
   .hero{
+    height: 600px;
     display: flex;
+    flex-flow: row wrap-reverse;
     margin: 30px 20px 50px 20px;
 
     &__info{
 
         &--titulo{
-        font-size: 60px;
+        font-size: 40px;
         line-height: 3rem;
         }
 
         &--parrafo{
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 
     &__cta{
-        align-items: flex-start;
-        padding-left: 40px;
-        padding-top: 20px;
-    }
+        justify-items: flex-start;
 
-    &__scroll{
-        padding-top: 40px;
     }
   }
   
