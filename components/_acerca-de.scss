@@ -57,6 +57,16 @@
     margin: 20px 100px 20px 100px;
     padding: 40px 150px 40px 150px;
     width: auto; 
+    animation: fade-in 2s ease-in both;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
 
     img{
         height: 500px;

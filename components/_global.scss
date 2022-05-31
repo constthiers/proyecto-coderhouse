@@ -141,6 +141,16 @@ footer a:hover{
     min-height: 100vh;
     justify-content: flex-start;
     padding: 0px 150px;
+    animation: fade-in 2s ease-in both;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
 
     &__first{
 
@@ -225,6 +235,16 @@ footer a:hover{
     width: auto;
     align-content: center;
     gap: 40px;
+    animation: fade-in 2s ease-in both;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
 }
 
 .contacto__texto{
